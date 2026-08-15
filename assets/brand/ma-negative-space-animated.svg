@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-labelledby="title desc" preserveAspectRatio="xMidYMid meet">
+  <title id="title">Negative Space MA</title>
+  <desc id="desc">Mehrdad Ashtiani monogram with M and A carved into a clipped-corner mark.</desc>
+  <style>
+    :root { --ma-fg:#17364d; --ma-accent:#de6928; }
+    @media (prefers-color-scheme: dark) { :root { --ma-fg:#f3efe7; --ma-accent:#ff8648; } }
+    .shell { color:var(--ma-fg); transform-origin:center; animation:maReveal .88s cubic-bezier(.22,.78,.2,1) both; }
+    .accent { color:var(--ma-accent); transform-origin:center; animation:maAccent .36s .56s ease-out both; }
+    @keyframes maReveal { from { opacity:0; transform:scale(.92) rotate(-1.5deg); } to { opacity:1; transform:scale(1) rotate(0); } }
+    @keyframes maAccent { from { opacity:0; transform:translateY(4px); } to { opacity:1; transform:translateY(0); } }
+    @media (prefers-reduced-motion: reduce) { .shell,.accent { animation:none !important; } }
+  </style>
+  <defs>
+    <symbol id="ma-shell" viewBox="0 0 100 100">
+      <defs>
+        <mask id="ma-neg-mask-animated">
+          <rect width="100" height="100" fill="white"/>
+          <path d="M23 70V31L37 52L50 31V70" fill="none" stroke="black" stroke-width="8" stroke-linecap="square" stroke-linejoin="miter"/>
+          <path d="M49 70L65 30L81 70M56 55H74" fill="none" stroke="black" stroke-width="8" stroke-linecap="square" stroke-linejoin="miter"/>
+        </mask>
+      </defs>
+      <path d="M18 14H75L90 29V86H18Z" fill="currentColor" mask="url(#ma-neg-mask-animated)"/>
+    </symbol>
+    <symbol id="ma-accent" viewBox="0 0 100 100">
+      <path d="M75 14L90 29H75Z" fill="currentColor"/>
+    </symbol>
+  </defs>
+  <g aria-hidden="true">
+    <use class="shell" href="#ma-shell"/>
+    <use class="accent" href="#ma-accent"/>
+  </g>
+</svg>

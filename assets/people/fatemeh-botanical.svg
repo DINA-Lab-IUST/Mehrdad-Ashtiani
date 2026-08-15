@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" role="img" aria-labelledby="title desc">
+  <title id="title">Botanical placeholder</title>
+  <desc id="desc">An abstract botanical illustration in muted green and earthy tones.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d8c7a6"/>
+      <stop offset=".48" stop-color="#b9c5a9"/>
+      <stop offset="1" stop-color="#7f9275"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+  <rect width="640" height="640" fill="url(#bg)"/>
+  <circle cx="112" cy="118" r="92" fill="#e3d4b5" opacity=".55" filter="url(#soft)"/>
+  <circle cx="538" cy="496" r="132" fill="#6c8062" opacity=".45" filter="url(#soft)"/>
+  <path d="M316 610C303 518 306 430 324 346c15-70 43-134 87-195" fill="none" stroke="#4e6149" stroke-width="14" stroke-linecap="round"/>
+  <path d="M321 500c-75-27-123-77-151-151M329 433c77-39 126-95 151-169M342 349c-63-30-104-77-126-140M371 280c55-30 94-73 118-130" fill="none" stroke="#5f7357" stroke-width="9" stroke-linecap="round"/>
+  <g fill="#708768">
+    <ellipse cx="158" cy="329" rx="72" ry="35" transform="rotate(29 158 329)"/>
+    <ellipse cx="201" cy="397" rx="68" ry="33" transform="rotate(38 201 397)"/>
+    <ellipse cx="458" cy="252" rx="74" ry="35" transform="rotate(-31 458 252)"/>
+    <ellipse cx="420" cy="342" rx="70" ry="32" transform="rotate(-26 420 342)"/>
+    <ellipse cx="207" cy="211" rx="62" ry="30" transform="rotate(35 207 211)"/>
+    <ellipse cx="471" cy="155" rx="60" ry="29" transform="rotate(-36 471 155)"/>
+  </g>
+  <g fill="#92a488" opacity=".95">
+    <ellipse cx="138" cy="282" rx="42" ry="21" transform="rotate(22 138 282)"/>
+    <ellipse cx="473" cy="311" rx="47" ry="22" transform="rotate(-20 473 311)"/>
+    <ellipse cx="239" cy="467" rx="50" ry="23" transform="rotate(32 239 467)"/>
+  </g>
+  <g fill="#b87950" opacity=".85">
+    <circle cx="135" cy="180" r="14"/>
+    <circle cx="496" cy="220" r="12"/>
+    <circle cx="435" cy="406" r="16"/>
+  </g>
+</svg>
